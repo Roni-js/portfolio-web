@@ -1,0 +1,135 @@
+@media screen and (max-width: 991px) {
+h1{
+  font-size: 40px;
+}
+#nav{
+  top: 5px;
+  overflow: hidden;
+}
+.navbar-brand{
+  width: 22%;
+  position: absolute;
+  margin-left: 38%;
+}
+.dp-imp, .intro {
+  margin-top: -100px;
+}
+img{
+  width: 70%;
+}
+.stack-sec{
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+.card{
+  width: 5px;
+}
+.icons{
+  width: 90%;
+  text-align: center;
+}
+.contact-sec{
+  padding: 50px 0 0 0;
+}
+.navbar{
+  height: 60px;
+   width: 100%;
+ }
+ .card-con{
+  margin-left: -9%;
+ }
+ .contact-sec h1{
+  font-size: 120%;
+ }
+ .card{
+  margin-left: 5%;
+ }
+ .about-sec{
+  margin-top: 20%;
+}
+.about-sec p {
+  font-size: 80%;
+}
+.exp-sec h1 {
+font-size: 230%;
+}
+.role p{
+margin-left: 30px;
+  }
+  .com-del p1 {
+    margin-left: 27%;
+  }
+  .exp-two{
+    margin-top: 5%;
+  }
+  .exp-two .role p{
+    margin-left: 24%;
+  }
+  .exp-two .com-del p1{
+    margin-left: 34%;
+  }
+  .hr-tag{
+    width: 100% !important;
+  }
+  .footer-sec{
+    margin-top: 30%;
+  }
+  }
+  /* for big screen  */
+@media screen and (min-width: 991px) {
+img{
+  width: 50%
+}
+#nav{
+
+  position: sticky !important;
+  top: 5px;
+  overflow: hidden;
+}
+#nav-logo{
+  margin-left: 200%;
+}
+.navbar-nav{
+  margin-left: 44%;
+}
+.stack-sec{
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+.icons{
+  width: 90%;
+}
+.navbar{
+ height: 60px;
+  width: 110%;
+  margin-left: -7%;
+}
+.navbar-nav{
+  margin-left: 36%;
+}
+.about-sec , .exp-sec{
+  padding: 80px;
+}
+.exp-one , .exp-two{
+  margin-top: -10%;
+}
+.role p{
+  margin-left: 60px;
+  margin-top: 5px;
+  }
+  .com-del p1 {
+    margin-left: 25%;
+  }
+  .exp-row{
+    margin-top: -7%;
+  }
+  .exp-two .role p{
+    margin-left: 22%;
+  }
+  .com p1{
+    margin-left: 30%;
+  }
+  .footer-sec{
+    margin-top: 8%;
+  }
+  }
