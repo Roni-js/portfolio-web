@@ -34,6 +34,7 @@ background: linear-gradient(to right, #302DFF 0%, #FF6797 100%);
 .navbar-brand{
 width: 150px;
 margin-left: 20px;
+
 }
 .dp-imp {
     background: #302DFF;
@@ -230,4 +231,11 @@ footer{
         border-radius: 50%;
         opacity: 0;
         pointer-events: none;
+    }
+    #nav{
+        background-image: linear-gradient(to right, #391164 0%, #0a275a 100%);
+    }
+    .nav-link{
+        color: white;
+        font-weight: bold;
     }
