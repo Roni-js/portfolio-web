@@ -13,9 +13,10 @@ body{
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="%238E8E8E" stroke="%238E8E8E" stroke-width="2"></circle></svg>') 24 24, auto;
     
 }
-.bg-image{
+body{
     background-image: url("https://images.unsplash.com/photo-1602475063211-3d98d60e3b1f?q=80&w=2157&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     backdrop-filter: blur(8px);
+  
     
 }
 li{
@@ -50,16 +51,19 @@ height: 100%;
 .stack-icon{
     width: 20%;
 }
+.git-logo{
+    filter: brightness(0) invert(1);
+}
 .email-text{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
 .mini-projects-sec{
     margin-top: 10%;
-width: 400px;
+max-width: 100vwh;
 height: 500px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.068) ;
     border-radius: 20px;
 }
 .mini-projects-sec button{
@@ -76,6 +80,8 @@ height: 500px;
 .mini-projects-sec h1{
 text-align: center;
 margin-top: 20px;
+font-size: 30px;
+color: white;
 }
 .card{
     max-height: 450px;
@@ -118,124 +124,69 @@ footer{
 
     }
 
-
-    /* background animation  */
-
-
-    .gradient-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        overflow: hidden;
-    }
-
-    .gradient-sphere {
-        position: absolute;
-        border-radius: 50%;
-        filter: blur(60px);
-    }
-
-    .noise-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.05;
-        z-index: 5;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    }
-
-    @keyframes float-1 {
-        0% {
-            transform: translate(0, 0) scale(1);
-        }
-        100% {
-            transform: translate(10%, 10%) scale(1.1);
-        }
-    }
-
-    @keyframes float-2 {
-        0% {
-            transform: translate(0, 0) scale(1);
-        }
-        100% {
-            transform: translate(-10%, -5%) scale(1.15);
-        }
-    }
-
-    @keyframes float-3 {
-        0% {
-            transform: translate(0, 0) scale(1);
-            opacity: 0.3;
-        }
-        100% {
-            transform: translate(-5%, 10%) scale(1.05);
-            opacity: 0.6;
-        }
-    }
-
-    .grid-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: 40px 40px;
-        background-image: 
-            linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-        z-index: 2;
-    }
-
-    .glow {
-        position: absolute;
-        width: 40vw;
-        height: 40vh;
-        background: radial-gradient(circle, rgba(72, 0, 255, 0.15), transparent 70%);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        animation: pulse 8s infinite alternate;
-        filter: blur(30px);
-    }
-
-    @keyframes pulse {
-        0% {
-            opacity: 0.3;
-            transform: translate(-50%, -50%) scale(0.9);
-        }
-        100% {
-            opacity: 0.7;
-            transform: translate(-50%, -50%) scale(1.1);
-        }
-    }
-
-    .particles-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 3;
-        pointer-events: none;
-    }
-
-    .particle {
-        position: absolute;
-        background: white;
-        border-radius: 50%;
-        opacity: 0;
-        pointer-events: none;
-    }
     #nav{
-        background-image: linear-gradient(to right, #391164 0%, #0a275a 100%);
+        background-image: linear-gradient(to right, #290c47 40%, #0a275a 100% );
     }
     .nav-link{
         color: white;
         font-weight: bold;
     }
+    
+    .navbar {
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #161616;
+        opacity: 0.;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        color: white;
+        position: relative;
+      }
+      
+      .logo {
+        font-size: 1.4rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'DM Serif Text', serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.336);
+        transition: color 0.3s ease;
+        cursor: pointer;
+        font-weight: bold;
+
+      }
+      
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+      
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+      
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+      }
+      
+      .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.438);
+        transition: 0.3s;
+      }
+      
+     

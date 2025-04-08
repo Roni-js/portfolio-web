@@ -101,7 +101,7 @@ img{
 }
 .navbar{
  height: 60px;
-  width: 110%;
+  width: 100vwh;
   margin-left: -7%;
 }
 .navbar-nav{
@@ -132,4 +132,27 @@ img{
   .footer-sec{
     margin-top: 8%;
   }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      flex-direction: column;
+      background: #222;
+      width: 100%;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.7s ease-out, padding 0.7s ease;
+    }
+  
+    .nav-links.active {
+      max-height: 500px; /* large enough to fit all items */
+      padding: 1rem;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
   }
