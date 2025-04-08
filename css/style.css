@@ -201,4 +201,15 @@ footer{
         transition: 0.3s;
       }
       
-     
+     .social-links .fa-brands {
+     font-size: 30px;
+   
+     }
+     .social-links .fa-square-github {
+     color: white;
+   
+     }
+     .social-links .fa-instagram {
+    color: rgba(250, 126, 30, 1);
+   
+     }
