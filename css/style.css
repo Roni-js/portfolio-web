@@ -70,6 +70,14 @@ height: 500px;
     background-color:rgba(255, 255, 255, 0.068) ;
     border-radius: 20px;
 }
+.mini-projects-sec ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
 .mini-projects-sec button{
     background-color: #3deb62;
     color: white;
@@ -211,5 +219,5 @@ footer{
      }
      .social-links .fa-instagram {
     color: rgba(250, 126, 30, 1);
-   
      }
+     
