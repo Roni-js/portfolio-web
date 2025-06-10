@@ -221,3 +221,6 @@ footer{
     color: rgba(250, 126, 30, 1);
      }
      
+.gpt{
+    filter: brightness(0) invert(1);
+}
